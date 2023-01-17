@@ -1,0 +1,49 @@
+.wrapperFaqSection{
+    display: flex;
+}
+.faqList{
+    padding-top: 125px;
+    width: 50%;
+}
+.title{
+    width: 300px;
+    padding: 188px 125px 125px 125px;
+    font-family: Montserrat;
+    font-size: 90px;
+    font-weight: 700;
+    text-shadow: 0px 0px 4px rgb(0 0 0 / 30%);
+    color: #589DBA;
+}
+.icon{
+    fill: #589DBA;
+}
+.iconOpen{
+    fill: #e96c62;
+    display: none;
+}
+.wrapperItem{
+    display: flex;
+    background-color: transparent;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    color: #589DBA;
+    margin-bottom: 10px;
+}
+.subTitle{
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    color: #589DBA;
+}
+.text{
+    margin-bottom: 15px;
+    font-family: Montserrat;
+    font-weight: 400;
+    color: #7A7A7A;
+    padding: 15px;
+    display: none;
+}

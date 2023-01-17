@@ -1,0 +1,62 @@
+.wrapper{
+    display: flex;
+}
+.wrapperBlock{
+    width: 50%;
+}
+.informBlock{
+    padding: 70px;
+}
+.listLink{
+    display: flex;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    color: #7a7a7a;
+    margin-bottom: 20px;
+}
+.buttonCard{
+    background-color: #e96c62;
+    color: white;
+    padding: 12px 25px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px -3px rgb(0 0 0 / 50%);
+    cursor: pointer;
+    transition: all .5s ease-in-out
+}
+.buttonCard:hover{
+  transform: scale(0.9);
+}
+.link{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    color: #7a7a7a;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.titleName{
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 500;
+    color: #589DBA;
+    margin-bottom: 50px;
+}
+.text{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    color: #7a7a7a;
+    margin-bottom: 50px;
+}
+.textPrice{
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: 600;
+    color: #7a7a7a;
+    margin-bottom: 35px;
+}

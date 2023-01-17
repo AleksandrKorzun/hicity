@@ -1,0 +1,18 @@
+.reviewSection{
+    background-color: #F6F6F6;
+}
+.text{
+    font-family: Montserrat;
+    font-size: 19px;
+    font-weight: 400;
+    color: #7A7A7A;
+    margin-bottom: 12px;
+    line-height: 160%;
+}
+.textSign{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    color: #55595c;
+    
+}

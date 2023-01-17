@@ -1,0 +1,65 @@
+.cartBoxWrapper {
+  width: 300px;
+  padding: 25px;
+}
+.wrapperInfoProduct{
+    width: 50%;
+}
+.wrapperProduct {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titleName {
+  font-family: Montserrat;
+  font-size: 25px;
+  font-weight: 500;
+  color: #e96c62;
+  margin-bottom: 15px;
+}
+.textPrice {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 500;
+  color: #d4d4d4;
+}
+.totalPriceText {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  color: #7a7a7a;
+  padding: 20px 0;
+}
+.wrapperLink {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cartBoxLink:not(:last-child) {
+    margin: 20px 0;
+}
+.cartBoxLink {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  padding: 15px 70px;
+  color: #2ea2cc;
+  border: 2px solid #2ea2cc;
+  border-radius: 20px;
+  transition-duration: 0.5s;
+}
+.cartBoxLink:hover{
+    background-color: #2ea2cc;
+    color: white;
+}
+.cartBoxLinkSecond{
+    background-color: #2ea2cc;
+    color: white;
+    border: transparent;
+}
+.cartBoxLinkSecond:hover{
+    background-color: #e96c62;
+}

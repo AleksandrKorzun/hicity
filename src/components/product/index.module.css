@@ -1,0 +1,63 @@
+.wrapperCard {
+  text-align: center;
+  padding: 30px;
+  border: 1px solid rgba(9, 9, 9, 0.1);
+  border-radius: 15px;
+  transition-duration: 0.5s;
+  background-color: #f3f2f2;
+}
+.wrapperCard:hover {
+  box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
+}
+.titleName {
+  font-family: Montserrat;
+  font-size: 33px;
+  font-weight: 700;
+  line-height: 120%;
+  color: #54595f;
+  padding-bottom: 15px;
+}
+.titlePrice {
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 800;
+  color: #e96c62;
+  padding-bottom: 15px;
+}
+.listProduct {
+}
+.item {
+  margin-bottom: 15px;
+}
+.wrapperItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.wrapperItem > svg {
+  color: #589dba;
+  margin-right: 5px;
+}
+.charactersTitle {
+  font-family: Montserrat;
+  color: #6d6d6d;
+  font-size: 14px;
+  font-weight: 400;
+}
+.buttonCard {
+  background-color: #e96c62;
+  color: white;
+  padding: 12px 25px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px -3px rgb(0 0 0 / 50%);
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.buttonCard:hover {
+  transform: scale(0.9);
+}

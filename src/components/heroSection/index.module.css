@@ -1,0 +1,44 @@
+.heroWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 150%;
+  color: #333;
+  margin-bottom: 30px;
+}
+.subTitle {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%;
+  color: #7a7a7a;
+  margin-bottom: 50px;
+}
+
+.linkHero {
+  color: white;
+  padding: 15px 30px;
+  background-color: #e96c62;
+  border-radius: 50px;
+  box-shadow: 0px 10px 30px -8px rgb(0 0 0 / 16%);
+  display: flex;
+  align-items: center;
+  width: 130px;
+  transition-duration: 0.5s;
+}
+.span {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  display: inline-block;
+  margin-right: 10px;
+}
+.linkHero:hover{
+  color: #e96c62;
+  background-color: white;
+}

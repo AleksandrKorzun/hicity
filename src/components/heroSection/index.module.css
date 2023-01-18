@@ -38,7 +38,24 @@
   display: inline-block;
   margin-right: 10px;
 }
-.linkHero:hover{
+.linkHero:hover {
   color: #e96c62;
   background-color: white;
+}
+@keyframes showImage {
+  from {
+    transform: translateX(150%) rotate(90deg);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0) rotate(0);
+    opacity: 1;
+  }
+}
+
+.wrapperImage {
+  /* transition: transform 3s ease-in-out; */
+  animation-name: showImage;
+  animation-duration: 3s;
+  /* transform: translateX(150%); */
 }

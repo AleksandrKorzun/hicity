@@ -24,6 +24,7 @@ const ProductPage = () => {
           <LinkList category={category} name={name} />
           <h3 className={s.titleName}>{name}</h3>
           <p className={s.text}>{description}</p>
+          <a href='https://www.youtube.com/watch?v=iKVrx5Vx1rs&ab_channel=MusicBoxPH' className={s.text}>Відео обзор</a>
           <p className={s.textPrice}>$ {price}.00</p>
           <button onClick={() => console.log(1)} className={s.buttonCard}>
             ADD TO CART

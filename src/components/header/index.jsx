@@ -1,13 +1,13 @@
-import { ShoppingBagOutlined } from '@mui/icons-material';
-import { Box, IconButton, Menu, MenuItem, Tooltip } from '@mui/material';
-import React, { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
-import CartBox from '../cartBox';
-import s from './index.module.css';
+import { ShoppingBagOutlined } from "@mui/icons-material";
+import { Box, IconButton, Menu, Tooltip } from "@mui/material";
+import React, { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
+import CartBox from "../cartBox";
+import s from "./index.module.css";
 
 const Header = ({ totalProductsCart }) => {
   const [anchorEl, setAnchorEl] = useState(null);
-  const handleClick = event => {
+  const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
   const handleClose = () => {
@@ -15,7 +15,7 @@ const Header = ({ totalProductsCart }) => {
   };
   const countTotal = totalProductsCart.reduce(
     (acc, item) => (acc += item.count),
-    0,
+    0
   );
   return (
     <header className={s.header}>
@@ -29,11 +29,15 @@ const Header = ({ totalProductsCart }) => {
           </NavLink>
         </nav>
 
-        <Box sx={{ flexGrow: 0 }}>
+        <Box
+          sx={{ flexGrow: 0 }}
+          onMouseEnter={handleClick}
+          onMouseLeave={handleClose}
+        >
           <Tooltip title="Open cart" position="relative">
             <IconButton onClick={handleClick} sx={{ p: 0 }}>
               <ShoppingBagOutlined
-                sx={{ color: 'grey', width: '30px', height: '30px' }}
+                sx={{ color: "grey", width: "30px", height: "30px" }}
               />
               {!!countTotal && <p className={s.cartNumber}>{countTotal}</p>}
             </IconButton>
@@ -44,14 +48,14 @@ const Header = ({ totalProductsCart }) => {
             open={Boolean(anchorEl)}
             onClose={handleClose}
             MenuListProps={{
-              'aria-labelledby': 'basic-button',
+              "aria-labelledby": "basic-button",
             }}
             sx={{
-              transform: 'translate(-80px, 10px)',
+              transform: "translate(-80px, 10px)",
             }}
           >
             {!!totalProductsCart.length ? (
-              <CartBox products={totalProductsCart}/>
+              <CartBox products={totalProductsCart} handleClose={handleClose} />
             ) : (
               <p className={s.cartText}>No products in the cart </p>
             )}

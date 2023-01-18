@@ -1,16 +1,26 @@
-import { Box, Divider, Grid } from '@mui/material';
-import React, { useContext, useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Context } from '../../context';
-import s from './index.module.css';
+import { Divider, Grid } from "@mui/material";
+import React, { useContext, useRef } from "react";
+import { Link } from "react-router-dom";
+import { Context } from "../../context";
+import useOnScreen from "../hook/useOnScreen";
+import s from "./index.module.css";
 
-const Product = ({ card }) => {
+const Product = ({ card, idx }) => {
   const { name, price, characters, photo, link, id } = card;
-  const {addToCart} = useContext(Context);
-  const onClick = () => addToCart(card)
+  const { addToCart } = useContext(Context);
+  const onClick = () => addToCart(card);
+  // const ref = useRef(null);
+  // const isInViewport1 = useOnScreen(ref);
+  // const classProductCard = isInViewport1
+  //   ? s.wrapperCard + " " + s.animationCard
+  //   : s.wrapperCard;
+  //   console.log(isInViewport1);
   return (
     <Grid item xs={4} sx={{}}>
-      <div className={s.wrapperCard}>
+      <div
+        // style={{ animationDelay: `${idx * 0.2}s` }}
+        className={s.wrapperCard}
+      >
         <Link to={`/product/${link}`}>
           <ul className={s.listProduct}>
             {photo && (

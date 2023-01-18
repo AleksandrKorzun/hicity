@@ -52,8 +52,8 @@ const ContactsSection = () => {
                   y2="30"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stop-color="#37AEE2" />
-                  <stop offset="1" stop-color="#1E96C8" />
+                  {/* <stop stop-color="#37AEE2" />
+                  <stop offset="1" stop-color="#1E96C8" /> */}
                 </linearGradient>
               </defs>
             </svg>

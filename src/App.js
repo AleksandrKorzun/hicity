@@ -2,8 +2,10 @@ import { useEffect, useState } from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import Layout from './components/layout';
 import { Context } from './context';
+import CartPage from './pages/cartPage';
 import CategoryPage from './pages/categoryPage';
 import HomePage from './pages/homePage';
+import OrderPage from './pages/orderPage';
 import ProductPage from './pages/productPage';
 import StorePage from './pages/storePage';
 
@@ -50,6 +52,8 @@ function App() {
           <Route path="/store" element={<StorePage />} />
           <Route path="/product/:id" element={<ProductPage />} />
           <Route path="/product-category/:id" element={<CategoryPage />} />
+          <Route path="/cart" element={<CartPage totalProductsCart={totalProductsCart}/>} />
+          <Route path="/order" element={<OrderPage />} />
         </Route>
       </Routes>
     </Context.Provider>

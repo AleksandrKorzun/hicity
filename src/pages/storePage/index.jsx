@@ -15,7 +15,7 @@ const StorePage = () => {
     <Section>
       <h2 className={s.title}>Store</h2>
       <Grid container spacing={2} columns={16}>
-        {cards.map((card) => <Product card={card}/>)}
+        {cards.map((card, idx) => <Product card={card} idx={idx}/>)}
       </Grid>
     </Section>
   );

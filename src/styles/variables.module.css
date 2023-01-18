@@ -1,0 +1,28 @@
+/* fonts */
+
+@value fontMontserrat: Montserrat, Arial, sans-serif;
+
+
+/* color */
+@value background-primary-color: #F5F5F5;
+@value background-secondary-color: #F9F9F9;
+@value background-white-color: #FFFFFF;
+@value background-card-color: #B1B5C2;
+@value background-button-color: #EEEEEE;
+@value accent-color: #6FC302;
+@value main-text-color: #2C2C2C;
+@value grey-text-color: #737373;
+@value secondary-text-color: #353535;
+@value black-text-color: #AAAAAA;
+@value white-text-color: #ffffff;
+@value number-color: #091E3F;
+@value input-text-color: #A6ABB9;
+@value card-number-color: #F5F7FA;
+@value background-overlay-color: rgba(43, 43, 43, 0.1);
+
+/* breakpoints */
+
+@value max-width-desktop: 1280px;
+@value min-width-desktop: 768px;
+@value max-width-mobile: 768px;
+@value min-width-mobile: 320px;

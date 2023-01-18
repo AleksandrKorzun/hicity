@@ -128,7 +128,7 @@ const ProductSection = () => {
     <Section>
       <div className={s.line}></div>
       <Grid container spacing={2} columns={16}>
-        {cards.map((card) => <Product card={card}/>)}
+        {cards.map((card, idx) => <Product card={card} idx={idx}/>)}
       </Grid>
     </Section>
   );

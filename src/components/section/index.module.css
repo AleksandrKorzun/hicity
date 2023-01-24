@@ -1,9 +1,23 @@
+@value min-width-desktop from '../../styles/variables.module.css';
+
 .section{
-    padding: 50px 0;
+    padding: 30px 0;
 }
 .container{
-    max-width: 1140px;
+    max-width: 650px;
     margin-right: auto;
     margin-left: auto;
     padding: 0 30px;
+}
+
+@media (min-width: min-width-desktop) {
+    .section{
+        padding: 50px 0;
+    }
+    .container{
+        max-width: 1140px;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0 30px;
+    }
 }

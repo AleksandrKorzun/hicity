@@ -1,0 +1,87 @@
+@value min-width-desktop from '../../styles/variables.module.css';
+
+.orderWrapper {
+  display: grid;
+  /* grid-template-columns: 3fr 2fr; */
+  grid-row-gap: 20px;
+  /* grid-template-rows: auto; */
+}
+.title {
+  font-family: Montserrat;
+  font-size: 25px;
+  font-weight: 400;
+  color: black;
+  text-align: left;
+  margin-bottom: 30px;
+}
+.label {
+  display: inline-block;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  color: #818a91;
+  text-align: left;
+  margin-bottom: 10px;
+  width: 90%;
+}
+.label > span{
+    display: block;
+    margin-bottom: 5px;
+}
+.inputText{
+    width: 100%;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 3px;
+    color: #818a91;
+    outline: 0;
+    border: 1px solid #02010112;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    padding: 16px;
+}
+.resultWrapper{
+    /* height: auto; */
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #d4d4d4;
+    padding: 25px;
+    margin-bottom: auto;
+    box-shadow: 0px 0px 30px 3px rgb(30 30 30 / 8%);
+}
+.cartOrderItem {
+    display: flex;
+    flex-direction: raw;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .cartOrderText {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    color: #7a7a7a;
+  }
+.buttonSend{
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    background-color: #E96C62;
+    color: white;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+@media (min-width: min-width-desktop) {
+  .orderWrapper {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-column-gap: 20px;
+  }
+}

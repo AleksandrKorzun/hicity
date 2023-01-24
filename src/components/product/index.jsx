@@ -16,7 +16,7 @@ const Product = ({ card, idx }) => {
   //   : s.wrapperCard;
   //   console.log(isInViewport1);
   return (
-    <Grid item xs={4} sx={{}}>
+    <Grid item xs={16} md={4}>
       <div
         // style={{ animationDelay: `${idx * 0.2}s` }}
         className={s.wrapperCard}
@@ -29,6 +29,7 @@ const Product = ({ card, idx }) => {
                   src={`${process.env.PUBLIC_URL}/${photo}`}
                   alt={photo}
                   width="200"
+                  className={s.imageCard}
                 />
                 <Divider />
               </li>

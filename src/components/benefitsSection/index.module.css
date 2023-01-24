@@ -1,3 +1,4 @@
+@value min-width-desktop from '../../styles/variables.module.css';
 .subTitle {
     font-family: Montserrat;
     font-size: 16px;

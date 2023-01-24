@@ -1,3 +1,5 @@
+@value min-width-desktop from '../../styles/variables.module.css';
+
 .titleContacts {
   font-family: Montserrat;
   font-size: 40px;
@@ -10,12 +12,16 @@
 
 .contactsList {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .contactsItem {
   width: 50%;
   text-align: center;
+}
+.contactsItem:not(:last-child) {
+  margin-bottom: 30px;
 }
 .subTitle {
   font-family: Montserrat;
@@ -39,4 +45,13 @@
 }
 .icon:hover{
    transform: translateY(-20%);
+}
+
+@media (min-width: min-width-desktop) {
+  .contactsList {
+    flex-direction: row;
+  }
+  .contactsItem:not(:last-child) {
+    margin-bottom: 0px;
+  }
 }

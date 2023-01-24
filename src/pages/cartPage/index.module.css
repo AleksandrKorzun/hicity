@@ -1,3 +1,5 @@
+@value min-width-desktop from '../../styles/variables.module.css';
+
 .title {
   font-family: Montserrat;
   font-size: 40px;
@@ -8,8 +10,8 @@
 }
 .cartWrapper {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-column-gap: 20px;
+  /* grid-template-raw: 2fr 1fr; */
+  grid-row-gap: 20px;
 }
 .cartPartWrapper {
   border: 1px solid #d4d4d4;
@@ -55,4 +57,12 @@
   text-align: center;
   border-radius: 10px;
   color: white;
+}
+
+@media (min-width: min-width-desktop) {
+  .cartWrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 20px;
+  }
 }

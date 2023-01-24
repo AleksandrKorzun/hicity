@@ -13,7 +13,7 @@
   padding: 30px;
   border: 1px solid rgba(9, 9, 9, 0.1);
   border-radius: 15px;
-  background-color: #f3f2f2;
+  /* background-color: #f3f2f2; */
   animation: showCard 1s ease-in-out;
 }
 
@@ -34,6 +34,10 @@
   font-weight: 800;
   color: #e96c62;
   padding-bottom: 15px;
+}
+.imageCard{
+  margin-right: auto;
+  margin-left: auto;
 }
 .listProduct {
 }

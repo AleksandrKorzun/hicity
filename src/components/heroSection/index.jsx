@@ -9,7 +9,7 @@ const HeroSection = () => {
   return (
     <Section>
       <Box className={s.heroWrapper}>
-        <Box width="50%">
+        <Box className={s.partWrapper}>
           <h3
             variant="h2"
             className={s.title}
@@ -35,7 +35,7 @@ const HeroSection = () => {
             <ArrowRightAltOutlined />
           </Link>
         </Box>
-        <Box width="50%" className={s.wrapperImage}>
+        <Box className={s.wrapperImage}>
           <img src={`${process.env.PUBLIC_URL}/hero.png`} alt="heroImage" />
         </Box>
       </Box>

@@ -40,7 +40,7 @@ const CartBox = ({ products, handleClose }) => {
         <Link to="/cart" className={s.cartBoxLink} onClick={handleClose}>
           View cart
         </Link>
-        <Link to="/order" className={s.cartBoxLink + ' ' + s.cartBoxLinkSecond}>
+        <Link to="/order" className={s.cartBoxLink + ' ' + s.cartBoxLinkSecond} onClick={handleClose}>
           checkout
         </Link>
       </div>

@@ -44,9 +44,9 @@ const CartPage = () => {
                     />
                     <img src={`${process.env.PUBLIC_URL}/${photo}`} alt="" />
                     <p>{name}</p>
-                    <p>${price}.00</p>
+                    <p>₴{price}.00</p>
                     <p>{count}</p>
-                    <p>${count * price}.00</p>
+                    <p>₴{count * price}.00</p>
                   </div>
                   <Divider />
                 </>
@@ -58,11 +58,11 @@ const CartPage = () => {
           <ul className={s.cartOrderList}>
             <li className={s.cartOrderItem}>
               <p className={s.cartOrderText}>Subtotal</p>
-              <p className={s.cartOrderText}>${totalPrice}.00</p>
+              <p className={s.cartOrderText}>₴{totalPrice}.00</p>
             </li>
             <li className={s.cartOrderItem}>
               <p className={s.cartOrderText}>Total</p>
-              <p className={s.cartOrderText}>${totalPrice}.00</p>
+              <p className={s.cartOrderText}>₴{totalPrice}.00</p>
             </li>
           </ul>
           <Link to="/order" className={s.cartOrderLink}>

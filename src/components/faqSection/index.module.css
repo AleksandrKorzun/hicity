@@ -22,10 +22,11 @@
 }
 .icon{
     fill: #589DBA;
+    display: none !important;
 }
 .iconOpen{
     fill: #e96c62;
-    display: none;
+    display: none !important;
 }
 .wrapperItem{
     display: flex;
@@ -38,6 +39,7 @@
     font-weight: 500;
     color: #589DBA;
     margin-bottom: 10px;
+    text-align: start;
 }
 .subTitle{
     font-family: Montserrat;
@@ -51,9 +53,10 @@
     font-weight: 400;
     color: #7A7A7A;
     padding: 15px;
+}
+.textNone{
     display: none;
 }
-
 @media (min-width: min-width-desktop) {
     .wrapperFaqSection{
         flex-direction: row;

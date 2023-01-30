@@ -14,7 +14,7 @@ const FeatureSection = () => {
       }}
     >
       <h2 className={s.title}>
-        <b>The products you want,</b> just cheaper.
+        Навушники, які ти хочеш, <b> але дешевше !</b>
       </h2>
       <div>
         <ul className={s.featureList}>
@@ -38,7 +38,7 @@ const FeatureSection = () => {
             <span
               className={s.span}
             >
-              Shop now
+              Магазин
             </span>
             <ArrowRightAltOutlined />
           </Link>

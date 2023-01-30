@@ -22,7 +22,7 @@ const HomePage = () => {
       <ProductSection />
       <FeatureSection />
       <FaqSection />
-      <ReviewSection />
+      {/* <ReviewSection /> */}
       <ContactsSection />
     </>
   );

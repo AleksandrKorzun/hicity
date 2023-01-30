@@ -1,4 +1,5 @@
 import { CallRounded } from '@mui/icons-material';
+import { Divider } from '@mui/material';
 import React from 'react';
 import Section from '../section';
 import s from './index.module.css';
@@ -6,6 +7,7 @@ import s from './index.module.css';
 const ContactsSection = () => {
   return (
     <Section>
+      <Divider/>
       <h2 className={s.titleContacts}>Contact us</h2>
 
       <ul className={s.contactsList}>

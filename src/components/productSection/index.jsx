@@ -14,39 +14,13 @@ import { Grid } from '@mui/material';
 
 const cards = [
   {
-    name: 'Pro V4',
-    price: 21,
-    link: 'pro-v4',
+    id: "3",
+    name: "Gen 2 - 62e",
+    price: 1600,
+    link: "gen-2-v3e",
     characters: [
       {
-        title: 'Bluetrum 8892A',
-        icon: <DeveloperBoardRounded />,
-      },
-      {
-        title: 'Bluetooth 5.0',
-        icon: <BluetoothRounded />,
-      },
-      {
-        title: 'Adjustable Eartips',
-        icon: <PanoramaFishEyeRounded />,
-      },
-      {
-        title: 'Well Sound Quality',
-        icon: <HeadphonesRounded />,
-      },
-      {
-        title: 'Active Noise Cancelling',
-        icon: <AlignHorizontalCenterRounded />,
-      },
-    ],
-  },
-  {
-    name: 'Pro V4.9 TB',
-    price: 52,
-    link: 'pro-v4.9-tb',
-    characters: [
-      {
-        title: 'Airoha 1562AE',
+        title: 'Airoha - 1562E Tiger',
         icon: <DeveloperBoardRounded />,
       },
       {
@@ -54,70 +28,101 @@ const cards = [
         icon: <BluetoothRounded />,
       },
       {
-        title: 'Adjustable Eartips',
+        title: 'Класичний дизайн',
         icon: <PanoramaFishEyeRounded />,
       },
       {
-        title: 'Excellent Sound Quality',
+        title: 'Якість звуку як в оригінал',
         icon: <HeadphonesRounded />,
       },
       {
-        title: 'Active Noise Cancelling',
+        title: 'Мульти-підключення пристроїв',
         icon: <AlignHorizontalCenterRounded />,
       },
     ],
   },
   {
-    name: 'Gen 2 V3E',
-    price: 27,
-    link: 'gen-2-v3e',
+    id: "8",
+    name: "Pro - 62ae Tiger",
+    price: 2200,
+    // photo: "AirPodsPro.png",
+    link: "pro-62ae-tiger",
     characters: [
       {
-        title: 'Airoha 1562E',
+        title: 'Airoha - 1562AE Tiger',
         icon: <DeveloperBoardRounded />,
       },
       {
-        title: 'Bluetooth 5.2',
+        title: 'Bluetooth 5.3',
         icon: <BluetoothRounded />,
       },
       {
-        title: 'Universal Size',
+        title: 'Змінні амбушури',
         icon: <PanoramaFishEyeRounded />,
       },
       {
-        title: 'Sounds as good as retail',
+        title: 'Весь функціонал, як в оригіналі',
         icon: <HeadphonesRounded />,
       },
       {
-        title: 'Six hours battery life',
+        title: '6 годин автономної роботи',
         icon: <BatteryChargingFullRounded />,
       },
     ],
   },
   {
-    name: 'Gen 3 V1.3',
-    price: 39,
-    link: 'gen-3-v1.3',
+    id: "12",
+    name: "Pro 2 - Huilian H2S",
+    price: 2450,
+    link: "pro2-huilian-h2S",
     characters: [
       {
-        title: 'BES 2500YP',
+        title: 'Pro 2 - Huilian H2S',
         icon: <DeveloperBoardRounded />,
       },
       {
-        title: 'Bluetooth 5.2',
+        title: 'Bluetooth 5.3',
         icon: <BluetoothRounded />,
       },
       {
-        title: 'Universal Size',
+        title: 'Змінні амбушури',
         icon: <PanoramaFishEyeRounded />,
       },
       {
-        title: 'Good Sound Quality',
+        title: 'Налаштування звуку, як в оригіналі',
         icon: <HeadphonesRounded />,
       },
       {
-        title: 'Six hours battery life',
-        icon: <BatteryChargingFullRounded />,
+        title: 'Керування гучності на навушнику',
+        icon: <AlignHorizontalCenterRounded />,
+      },
+    ],
+  },
+  {
+    id: "15",
+    name: "Gen 3 - Huilian A10s",
+    price: 1700,
+    link: "gen-3-huilian-a10s",
+    characters: [
+      {
+        title: 'Gen 3 - Huilian A10s',
+        icon: <DeveloperBoardRounded />,
+      },
+      {
+        title: 'Bluetooth 5.3',
+        icon: <BluetoothRounded />,
+      },
+      {
+        title: 'Новий сучасний дизайн',
+        icon: <PanoramaFishEyeRounded />,
+      },
+      {
+        title: 'Якість звуку як в оригінал',
+        icon: <HeadphonesRounded />,
+      },
+      {
+        title: 'Мульти-підключення пристроїв',
+        icon: <AlignHorizontalCenterRounded />,
       },
     ],
   },

@@ -1,8 +1,16 @@
-.title{
-    font-family: Montserrat;
-    font-size: 40px;
-    font-weight: 500;
-    color: #589DBA;
-    text-align: center;
-    margin-bottom: 30px;
+.title {
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 500;
+  color: #589dba;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.subTitle {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  color: #589dba;
+  text-align: center;
+  margin: 30px 0;
 }

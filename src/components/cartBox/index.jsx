@@ -15,7 +15,7 @@ const CartBox = ({ products, handleClose }) => {
       <ul className={s.cartBoxList}>
         {products.map(({ photo, name, count, price, id, link }) => (
           <li key={id} className={s.cartBoxItem}>
-            <Link to={`/product/${link}`} className={s.wrapperProduct}>
+            <Link to={`/product/${link}`} onClick={handleClose} className={s.wrapperProduct}>
               <img
                 src={`${process.env.PUBLIC_URL}/${photo}`}
                 alt={photo}
@@ -24,7 +24,7 @@ const CartBox = ({ products, handleClose }) => {
               <div className={s.wrapperInfoProduct}>
                 <h3 className={s.titleName}>{name}</h3>
                 <p className={s.textPrice}>
-                  {count} * ${price}.00
+                  {count} * ₴ {price}.00
                 </p>
               </div>
             </Link>
@@ -33,7 +33,7 @@ const CartBox = ({ products, handleClose }) => {
         ))}
       </ul>
       <p className={s.totalPriceText}>
-        <strong>Subtotal: </strong>${totalPrice}.00
+        <strong>Subtotal: </strong>₴ {totalPrice}.00
       </p>
       <Divider />
       <div className={s.wrapperLink}>

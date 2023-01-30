@@ -1,7 +1,8 @@
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import LinkList from '../../components/linkList';
 import Section from '../../components/section';
+import { Context } from '../../context';
 import { cards } from '../../data/product';
 import s from './index.module.css';
 
@@ -9,11 +10,11 @@ const ProductPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  // const cart = JSON.parse(localStorage.getItem('myCart'));
-  // console.log(cart)
+  const { addToCart } = useContext(Context);
   const location = useLocation();
-  const [{ name, price, characters, photo, link, category, description }] =
-    cards.filter(card => card.link === location.pathname.split('/')[2]);
+  const card = cards.filter(card => card.link === location.pathname.split('/')[2]);
+  const onClick = () => addToCart(card[0]);
+  const [{ name, price, characters, photo, link, category, description }] = card;
   return (
     <Section style={{ height: '75vh' }}>
       <div className={s.wrapper}>
@@ -25,8 +26,8 @@ const ProductPage = () => {
           <h3 className={s.titleName}>{name}</h3>
           <p className={s.text}>{description}</p>
           <a href='https://www.youtube.com/watch?v=iKVrx5Vx1rs&ab_channel=MusicBoxPH' className={s.text}>Відео обзор</a>
-          <p className={s.textPrice}>$ {price}.00</p>
-          <button onClick={() => console.log(1)} className={s.buttonCard}>
+          <p className={s.textPrice}>₴ {price}.00</p>
+          <button onClick={onClick} className={s.buttonCard}>
             ADD TO CART
           </button>
         </div>

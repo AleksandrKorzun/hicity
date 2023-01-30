@@ -25,8 +25,14 @@ const Header = ({ totalProductsCart }) => {
       <div className={s.navWrapper}>
         <nav>
           <NavLink to="/store" className={s.navigation}>
-            Store
+            Магазин
           </NavLink>
+          {/* <NavLink to="/video" className={s.navigation}>
+            Відео-обзори
+          </NavLink>
+          <NavLink to="/info" className={s.navigation}>
+            Інфо
+          </NavLink> */}
         </nav>
 
         <Box

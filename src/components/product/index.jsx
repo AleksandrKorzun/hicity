@@ -5,7 +5,7 @@ import { Context } from "../../context";
 import useOnScreen from "../hook/useOnScreen";
 import s from "./index.module.css";
 
-const Product = ({ card, idx }) => {
+const Product = ({ card, idx, mdColumn, xsColumn }) => {
   const { name, price, characters, photo, link, id } = card;
   const { addToCart } = useContext(Context);
   const onClick = () => addToCart(card);
@@ -39,13 +39,16 @@ const Product = ({ card, idx }) => {
               <Divider />
             </li>
             <li key={price} className={s.item}>
-              <h3 className={s.titlePrice}>${price}.00</h3>
+              <h3 className={s.titlePrice}>₴ {price}</h3>
               <Divider />
             </li>
 
             {characters &&
-              characters.map(({ title, icon }) => (
-                <li key={title + id} className={s.item}>
+              characters.map(({ title, icon }, idx) => (
+                <li
+                  key={title + id}
+                  className={s.item}
+                >
                   <div className={s.wrapperItem}>
                     {icon}
                     <h4 className={s.charactersTitle}>{title}</h4>

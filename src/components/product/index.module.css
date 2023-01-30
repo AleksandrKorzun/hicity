@@ -20,13 +20,24 @@
 .wrapperCard:hover {
   box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
 }
+/* .item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
 .titleName {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: Montserrat;
-  font-size: 33px;
+  height: 50px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 120%;
   color: #54595f;
   padding-bottom: 15px;
+  /* padding: auto 0 16px 0; */
+  
 }
 .titlePrice {
   font-family: Montserrat;

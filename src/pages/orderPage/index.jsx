@@ -158,7 +158,7 @@ const OrderPage = () => {
                       <p className={s.cartOrderText}>
                         {name} × {count}{" "}
                       </p>
-                      <p className={s.cartOrderText}>${price * count}.00</p>
+                      <p className={s.cartOrderText}>₴ {price * count}</p>
                     </li>
                   )
                 )}
@@ -168,7 +168,7 @@ const OrderPage = () => {
                   <b>Total</b>
                 </p>
                 <p className={s.cartOrderText}>
-                  <b>${totalPrice}.00</b>
+                  <b>₴ {totalPrice}</b>
                 </p>
               </li>
             </ul>

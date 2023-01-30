@@ -29,29 +29,45 @@ const faqSectionContent = [
   },
 ];
 
+const ItemQuestion = ({ question, id, answer }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const onHandleClick = (e) => {
+    if (Number(e.target.id) === id) {
+      setIsOpen((prev) => !prev);
+    }
+  };
+  return (
+    <li key={id}>
+      <button
+        type="button"
+        className={s.wrapperItem}
+        id={id}
+        onClick={onHandleClick}
+      >
+        <ArrowRightRounded fontSize="large" className={!isOpen ? s.icon : s.iconOpen} />
+        <ArrowDropDownRounded fontSize="large" className={!isOpen ? s.iconOpen : s.icon} />
+        {question}
+      </button>
+      <p className={!isOpen ? s.textNone : s.text}>{answer}</p>
+      <Divider />
+    </li>
+  );
+};
+
 const FaqSection = () => {
-  const [content, setContent] = useState(faqSectionContent);
-  const onHandleClick = () => [];
   return (
     <Section>
       <div className={s.wrapperFaqSection}>
         <h2 className={s.title}>FAQ</h2>
         <ul className={s.faqList}>
-          {content.map(({ question, answer, id, isOpen }) => (
-            <li key={question}>
-              <button
-                type="button"
-                className={s.wrapperItem}
-                id={id}
-                onClick={onHandleClick}
-              >
-                <ArrowRightRounded fontSize="large" className={s.icon} />
-                <ArrowDropDownRounded fontSize="large" className={s.iconOpen} />
-                {question}
-              </button>
-              <p className={!isOpen ? s.textNone : s.text}>{answer}</p>
-              <Divider />
-            </li>
+          {faqSectionContent.map(({ question, answer, id }) => (
+            <ItemQuestion
+              question={question}
+              // isOpen={isOpen}
+              id={id}
+              answer={answer}
+            />
           ))}
         </ul>
       </div>

@@ -15,6 +15,11 @@
     color: #7a7a7a;
     margin-bottom: 20px;
 }
+.btnWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .buttonCard{
     background-color: #e96c62;
     color: white;

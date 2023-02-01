@@ -11,8 +11,7 @@ import StorePage from './pages/storePage';
 
 function App() {
   useEffect(() => {
-    const getTotalProductsCart = JSON.parse(localStorage.getItem('myCart'));
-    setTotalProductsCart(getTotalProductsCart);
+    getProductCart();
   }, []);
   const [totalProductsCart, setTotalProductsCart] = useState([]);
   const addToCart = card => {
@@ -38,10 +37,20 @@ function App() {
       setTotalProductsCart(newCart);
     }
   };
+  const getProductCart = () => {
+    const getTotalProductsCart = JSON.parse(localStorage.getItem('myCart'));
+    setTotalProductsCart(getTotalProductsCart);
+  }
+  const deleteProductCart = (id) => {
+    const newCart = totalProductsCart.filter((product) => product.id !== id);
+    localStorage.setItem('myCart', JSON.stringify(newCart));
+    setTotalProductsCart(newCart);
+  };
   return (
     <Context.Provider
       value={{
         addToCart,
+        getProductCart,
         totalProductsCart,
       }}
     >
@@ -52,7 +61,7 @@ function App() {
           <Route path="/store" element={<StorePage />} />
           <Route path="/product/:id" element={<ProductPage />} />
           <Route path="/product-category/:id" element={<CategoryPage />} />
-          <Route path="/cart" element={<CartPage totalProductsCart={totalProductsCart}/>} />
+          <Route path="/cart" element={<CartPage totalProductsCart={totalProductsCart} deleteProductCart={deleteProductCart}/>} />
           <Route path="/order" element={<OrderPage />} />
         </Route>
       </Routes>

@@ -59,7 +59,7 @@ const Product = ({ card, idx, mdColumn, xsColumn }) => {
           </ul>
         </Link>
         <button onClick={onClick} className={s.buttonCard}>
-          ADD TO CART
+          Купити
         </button>
       </div>
     </Grid>

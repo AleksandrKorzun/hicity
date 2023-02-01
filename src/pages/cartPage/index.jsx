@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import Section from "../../components/section";
 import s from "./index.module.css";
 
-const CartPage = () => {
+const CartPage = ({deleteProductCart}) => {
   useEffect(() => {
     const getTotalProductsCart = JSON.parse(localStorage.getItem("myCart"));
     setTotalProductsCart(getTotalProductsCart);
@@ -15,10 +15,11 @@ const CartPage = () => {
     (acc, { count, price }) => (acc += count * price),
     0
   );
-  const deleteProductCart = (id) => {
+  const onHandleDeleteProductCart = (id) => {
     const newCart = totalProductsCart.filter((product) => product.id !== id);
-    localStorage.setItem('myCart', JSON.stringify(newCart));
+    // localStorage.setItem('myCart', JSON.stringify(newCart));
     setTotalProductsCart(newCart);
+    deleteProductCart(id)
   };
   return (
     <Section style={{ minHeight: "75vh" }}>
@@ -39,7 +40,7 @@ const CartPage = () => {
                 <>
                   <div className={s.cartProductHeadWrapper}>
                     <CloseRounded
-                      onClick={() => deleteProductCart(id)}
+                      onClick={() => onHandleDeleteProductCart(id)}
                       sx={{ cursor: "pointer" }}
                     />
                     <img src={`${process.env.PUBLIC_URL}/${photo}`} alt="" />

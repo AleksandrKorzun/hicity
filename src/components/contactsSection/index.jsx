@@ -23,9 +23,9 @@ const ContactsSection = () => {
               }}
               className={s.icon}
             />
-            <h3 className={s.subTitle}>Call us</h3>
+            <h3 className={s.subTitle}>Подзвоніть нам</h3>
           </a>
-          <p className={s.text}>The fastest way of reaching us.</p>
+          <p className={s.text}>Найшвидший спосіб з нами зв`язатись</p>
         </li>
         <li key="Write to us" className={s.contactsItem}>
           <a href="https://t.me/OleksandrKorzun">
@@ -59,10 +59,10 @@ const ContactsSection = () => {
                 </linearGradient>
               </defs>
             </svg>
-            <h3 className={s.subTitle}>Write to us</h3>
+            <h3 className={s.subTitle}>Напишіть нам</h3>
           </a>
           <p className={s.text}>
-            A littler slower, but we will reply as soon as possible..
+            Трошки повільніше, але ми відповімо Вам як найшвидше
           </p>
         </li>
       </ul>

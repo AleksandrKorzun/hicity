@@ -38,10 +38,10 @@ const CartBox = ({ products, handleClose }) => {
       <Divider />
       <div className={s.wrapperLink}>
         <Link to="/cart" className={s.cartBoxLink} onClick={handleClose}>
-          View cart
+          Переглянути корзину
         </Link>
         <Link to="/order" className={s.cartBoxLink + ' ' + s.cartBoxLinkSecond} onClick={handleClose}>
-          checkout
+          Оформити замовлення
         </Link>
       </div>
     </div>

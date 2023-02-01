@@ -68,10 +68,13 @@
     color: #7A7A7A;
     padding: 15px;
     animation: showText 1s ease-in-out;
+    overflow: hidden;
 }
 
 .textNone{
+    /* display: block; */
     display: none;
+    /* height: 0; */
 }
 @media (min-width: min-width-desktop) {
     .wrapperFaqSection{

@@ -56,13 +56,13 @@ function App() {
     >
       <Routes>
         <Route element={<Layout totalProductsCart={totalProductsCart} />}>
-          <Route path="https://mistoreplic.com.ua/" element={<HomePage />} />
-          <Route path="https://mistoreplic.com.ua/home" element={<Navigate to="/" replace />} />
-          <Route path="https://mistoreplic.com.ua/store" element={<StorePage />} />
-          <Route path="https://mistoreplic.com.ua/product/:id" element={<ProductPage />} />
-          <Route path="https://mistoreplic.com.ua/product-category/:id" element={<CategoryPage />} />
-          <Route path="https://mistoreplic.com.ua/cart" element={<CartPage totalProductsCart={totalProductsCart} deleteProductCart={deleteProductCart}/>} />
-          <Route path="https://mistoreplic.com.ua/order" element={<OrderPage />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/home" element={<Navigate to="/" replace />} />
+          <Route path="/store" element={<StorePage />} />
+          <Route path="/product/:id" element={<ProductPage />} />
+          <Route path="/product-category/:id" element={<CategoryPage />} />
+          <Route path="/cart" element={<CartPage totalProductsCart={totalProductsCart} deleteProductCart={deleteProductCart}/>} />
+          <Route path="/order" element={<OrderPage />} />
         </Route>
       </Routes>
     </Context.Provider>

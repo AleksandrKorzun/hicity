@@ -1,9 +1,8 @@
-import { Autocomplete, Divider, TextField } from "@mui/material";
+import { Divider } from "@mui/material";
 import axios from "axios";
 import { Field, Form, Formik } from "formik";
 import React, { useContext, useEffect, useState } from "react";
 import Section from "../../components/section";
-import { getRegions, getRegionsService } from "../../services/services";
 import s from "./index.module.css";
 import * as Yup from "yup";
 import { Context } from "../../context";
@@ -58,7 +57,7 @@ const OrderPage = () => {
     console.log("Form data", values);
     console.log("submitProps", submitProps);
 
-    const { firstName, secondName, state, city, department, phone, email } =
+    const { firstName, secondName, state, city, department, phone } =
       values;
     const name = `ФИО: ${firstName} ${secondName}`;
     const tel = `Тел: ${phone}`;

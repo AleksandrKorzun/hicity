@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import LinkList from "../../components/linkList";
 import Section from "../../components/section";
 import { Context } from "../../context";
@@ -16,7 +16,7 @@ const ProductPage = () => {
     (card) => card.link === location.pathname.split("/")[2]
   );
   const onClick = () => addToCart(card[0]);
-  const [{ name, price, characters, photo, link, category, description }] =
+  const [{ name, price, photo, category, description }] =
     card;
   return (
     <Section style={{ height: "75vh" }}>
@@ -28,12 +28,12 @@ const ProductPage = () => {
           <LinkList category={category} name={name} />
           <h3 className={s.titleName}>{name}</h3>
           <p className={s.text}>{description}</p>
-          <a
+          {/* <a
             href="https://www.youtube.com/watch?v=iKVrx5Vx1rs&ab_channel=MusicBoxPH"
             className={s.text}
           >
             Відео обзор
-          </a>
+          </a> */}
           <p className={s.textPrice}>₴ {price}.00</p>
           <div className={s.btnWrapper}>
             <button onClick={onClick} className={s.buttonCard}>

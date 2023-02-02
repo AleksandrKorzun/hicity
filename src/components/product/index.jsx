@@ -1,20 +1,13 @@
 import { Divider, Grid } from "@mui/material";
-import React, { useContext, useRef } from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../../context";
-import useOnScreen from "../hook/useOnScreen";
 import s from "./index.module.css";
 
 const Product = ({ card, idx, mdColumn, xsColumn }) => {
   const { name, price, characters, photo, link, id } = card;
   const { addToCart } = useContext(Context);
   const onClick = () => addToCart(card);
-  // const ref = useRef(null);
-  // const isInViewport1 = useOnScreen(ref);
-  // const classProductCard = isInViewport1
-  //   ? s.wrapperCard + " " + s.animationCard
-  //   : s.wrapperCard;
-  //   console.log(isInViewport1);
   return (
     <Grid item xs={16} md={4}>
       <div
@@ -24,7 +17,7 @@ const Product = ({ card, idx, mdColumn, xsColumn }) => {
         <Link to={`/product/${link}`}>
           <ul className={s.listProduct}>
             {photo && (
-              <li key={id} className={s.item}>
+              <li key={id + photo} className={s.item}>
                 <img
                   src={`${process.env.PUBLIC_URL}/${photo}`}
                   alt={photo}
@@ -34,7 +27,7 @@ const Product = ({ card, idx, mdColumn, xsColumn }) => {
                 <Divider />
               </li>
             )}
-            <li key={name} className={s.item}>
+            <li key={id + name} className={s.item}>
               <h3 className={s.titleName}>{name}</h3>
               <Divider />
             </li>
@@ -46,7 +39,7 @@ const Product = ({ card, idx, mdColumn, xsColumn }) => {
             {characters &&
               characters.map(({ title, icon }, idx) => (
                 <li
-                  key={title + id}
+                  key={`${id} + ${title} + ${idx}`}
                   className={s.item}
                 >
                   <div className={s.wrapperItem}>

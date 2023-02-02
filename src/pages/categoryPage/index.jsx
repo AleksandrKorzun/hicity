@@ -14,7 +14,7 @@ const CategoryPage = () => {
   );
   const category = categoryProducts[0].category;
   return (
-    <Section>
+    <Section style={{minHeight: "70vh"}}>
       <LinkList category={category} />
       <h3 className={s.title}>{category}</h3>
       <Grid container spacing={2} columns={16}>

@@ -5,9 +5,7 @@ import FaqSection from '../../components/faqSection';
 import FeatureSection from '../../components/featureSection';
 import HeroSection from '../../components/heroSection';
 import ProductSection from '../../components/productSection';
-import ReviewSection from '../../components/reviewSection';
 
-const cart = [];
 const HomePage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -22,7 +20,6 @@ const HomePage = () => {
       <ProductSection />
       <FeatureSection />
       <FaqSection />
-      {/* <ReviewSection /> */}
       <ContactsSection />
     </>
   );

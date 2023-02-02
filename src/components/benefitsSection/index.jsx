@@ -4,8 +4,7 @@ import {
   PaidOutlined,
   ThumbUpAltRounded,
 } from "@mui/icons-material";
-import { Grid, Typography } from "@mui/material";
-import { Box } from "@mui/system";
+import { Grid } from "@mui/material";
 import React from "react";
 import Section from "../section";
 import s from "./index.module.css";
